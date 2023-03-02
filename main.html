@@ -4,20 +4,77 @@
 	<title>Ghost Team</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="main.css">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
 	<header class="fixed-header">
-        <nav class="navbar">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav-list">
+                   <li class="nav-item">
+                  <a class="nav-link active" aria-current="page"href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link" href="#">Item</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+    </nav>
+    <!-- <nav class="navbar navbar-expand-sm navbar-light">
+      <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul>
+                <li><a href="#">Main</a></li>
+                <div class="dropdown">
+                  <a href="#" class="dropdown__hover">
+                    Matches
+                  </a>
+                  <div class="dropdown__menu">
+                    <li><a href="#">Match 1</a></li>
+                    <li><a href="#">Match 2</a></li>
+                    <li><a href="#">Match 3</a></li>
+                  </div>
+                </div>
+                  <li class="nav-item">
+                  <a class="nav-link" href="#">Item</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+    </nav> -->
+        <!-- <nav class="navbar navbar-expand-sm">
+
           <ul>
             <li><a href="#">Main</a></li>
-            <li><a href="#">Matches</a></li>
+            <div class="dropdown">
+              <a href="#" class="dropdown__hover">
+                Matches
+              </a>
+              <div class="dropdown__menu">
+                <li><a href="#">Match 1</a></li>
+                <li><a href="#">Match 2</a></li>
+                <li><a href="#">Match 3</a></li>
+              </div>
+            </div>
             <li><a href="#">News</a></li>
             <li><a href="#">Fans</a></li>
             <li><a href="#">Contacts</a></li>
             <li><a href="#">Admin</a></li>
           </ul>
-        </nav>
+        </nav> -->
       </header>
 	<main>
     <div class = "main-img"></div>
@@ -28,7 +85,10 @@
       Our first Olympic Gold Medal in Beijing in 2008 delivered proof of the performance potential of our bikes. In the 10 years following, our athletes have won countless National and International titles: German Bundesliga titles, World Cup titles as well as World Cup, European and World Championship titles.The GHOST Factory Racing Team continually evolved over course of years.
     </div>
 		<div class = "main-info">
-      <p class="sam">em ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada ligula eu ante bibendum tristique. Suspendisse auctor arcu vel dolor blandit, non vestibulum mi facilisis. Donec non orci sed mauris suscipit pretium. Praesent pellentesque nisl quis augue bibendum laoreet. Nullam elementum turpis id velit vestibulum lobortis. Duis sollicitudin lobortis diam, eu dignissim nibh bibendum eget. Pellentesque aliquet ligula quis magna placerat bibendum. Fusce euismod, odio eu pulvinar faucibus, elit elit vehicula elit, sit amet ullamcorper sapien nunc in nunc. </p>
+      <div class ="text">
+        The GHOST Factory Racing Team continually evolved over the course of the years. Currently, the team consists of five international talents from five different countries. We are the most diverse international mountain bike team in the World Cup and the average age of our riders is 23 years.
+        <br><br>Their success confirms our approach, that in the sport of mountain biking, you can achieve a lot through trust and cooperation, common goals and a strong and profound team spirit. This includes not only fair play and respect among the team, but also towards the competition.
+      </div>
     </div>
 	</main>
 	<footer>

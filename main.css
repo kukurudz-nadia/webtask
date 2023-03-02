@@ -4,10 +4,6 @@
     margin-right: 0;
 }
 
-/* main {
-  background-color: #8FBC8F;
-} */
-
 .main-img {
   background-image: url('team.jpg');
   background-size: cover;
@@ -23,14 +19,21 @@
   background-position: center;
   height: 120vh;
   margin-top: 400px;
-  filter: blur(3px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.sam {
-  border: 5px solid  #B22222;
-  border-radius: 30px;
+.text {
+  border: 6px solid #556B2F;
+  border-radius: 60px;
   font-size: 24px;
   text-align: center;
   background-color: #FAEBD7;
+  padding: 30px 20px 30px 20px;
+  margin: 30px 300px 30px 300px;
+  color: #556B2F;
+  font-weight: 600;
+  line-height: 1.5;
 }
 .fixed-header {
     background-color: #B22222;
@@ -39,12 +42,25 @@
     left: 0;
     width: 100%;
   }
+  body{
+    background-color: #FFE57C;
+    }
+    .navbar{
+    padding-left: 350px;
+    }
 
+    #nav-list a {
+    color: #FF7CD8;
+    }
+    #nav-list a:hover{
+    color: #FF7CD8;
+    }
+/*
   .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 20px;
+    padding: 20px 20px;
   }
 
   .navbar ul {
@@ -52,14 +68,12 @@
     margin: 0;
     padding: 0;
     display: flex;
+    list-style: none;
   }
 
   .navbar li {
     margin-right: 20px;
-  }
-
-  .navbar li:last-child {
-    margin-right: 0;
+    padding-top: 10px;
   }
 
   .navbar a {
@@ -67,7 +81,44 @@
     text-decoration: none;
     font-weight: bold;
     font-size: 24px;
+  } */
+  .dropdown{
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+    margin-right: 20px;
   }
+    .dropdown__hover{
+      display: inline-block;
+      padding: 10px;
+      background-color: #B22222;
+      color: #ffffff;
+      border:0 solid  #B22222;
+      cursor: pointer;
+    }
+    .dropdown__hover:hover{background-color: #e36767;}
+    .dropdown__menu{
+      position: absolute;
+      display: none;
+      top: 100%;
+      left: 0;
+      min-width: 200px;
+      background-color: #B22222;
+      color: #323b40;
+      box-shadow: 0 3px 2px rgba(0,0,0,0.3);
+    }
+    .dropdown:hover .dropdown__menu{display: block;}
+      .dropdown__menu a{
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        border-width: 0;
+        border-top: 1px solid #e0e0e0;
+      }
+      .dropdown__menu a:hover{
+        background-color:#e36767;
+        color: #323b40;
+      }
 
   .first-text {
     float: left;
@@ -97,7 +148,7 @@
  footer {
     background-color: #B22222;
     color: #FFFFFF;
-    padding: 20px;
+    padding: 15px;
     margin: 0;
   }
 
