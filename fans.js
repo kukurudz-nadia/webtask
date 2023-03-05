@@ -3,14 +3,14 @@
 //   document.getElementById("output").innerHTML = inputText;
 //   document.getElementById("text-field").value = "";
 // }
-let messages = [];
+let comments = [];
 
 function addComment() {
     const commentInput = document.getElementById("comment");
     const comment = commentInput.value.trim();
 
     if (comment.length > 0) {
-        mcomment.push(comment);
+        comments.push(comment);
         commentInput.value = "";
         displayComments();
     }
@@ -20,7 +20,7 @@ function displayComments() {
     const commentList = document.getElementById("commentsList");
     commentList.innerHTML = "";
 
-    for (let i = 0; i < comment.length; i++) {
+    for (let i = 0; i < comments.length; i++) {
         const comment = comments[i];
         const commentElement = document.createElement("div");
         commentElement.textContent = comment;
