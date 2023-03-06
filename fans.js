@@ -7,7 +7,8 @@ function addComment() {
 
     if (comment.length > 0) {
         const date = new Date().toLocaleString();
-        const commentObject = { id: commentId, comment: comment, date: date };
+        const name = "Fan Fan"
+        const commentObject = { id: commentId, comment: comment, date: date, name: name };
         comments.push(commentObject);
         commentId++;
         commentInput.value = "";
@@ -22,7 +23,7 @@ function displayComments() {
     for (let i = 0; i < comments.length; i++) {
         const comment = comments[i];
         const commentElement = document.createElement("div");
-        commentElement.innerHTML = `<p>${comment.comment}</p><small>${comment.date}</small>`;
+        commentElement.innerHTML = `<br><p>${comment.comment}</p>${comment.name},   <small>${comment.date}</small>`;
         commentList.appendChild(commentElement);
     }
 }
