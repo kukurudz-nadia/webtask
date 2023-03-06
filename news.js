@@ -8,7 +8,6 @@ function displayData() {
   let outputP = document.createElement("p");
 
   outputP.textContent = input1 + input2;
-
   if (input3) {
     let outputImg = document.createElement("img");
     outputImg.src = URL.createObjectURL(input3);
