@@ -1,16 +1,15 @@
-// function displayText() {
-//   var inputText = document.getElementById("text-field").value;
-//   document.getElementById("output").innerHTML = inputText;
-//   document.getElementById("text-field").value = "";
-// }
 let comments = [];
+let commentId = 1;
 
 function addComment() {
     const commentInput = document.getElementById("comment");
     const comment = commentInput.value.trim();
 
     if (comment.length > 0) {
-        comments.push(comment);
+        const date = new Date().toLocaleString();
+        const commentObject = { id: commentId, comment: comment, date: date };
+        comments.push(commentObject);
+        commentId++;
         commentInput.value = "";
         displayComments();
     }
@@ -23,7 +22,7 @@ function displayComments() {
     for (let i = 0; i < comments.length; i++) {
         const comment = comments[i];
         const commentElement = document.createElement("div");
-        commentElement.textContent = comment;
+        commentElement.innerHTML = `<p>${comment.comment}</p><small>${comment.date}</small>`;
         commentList.appendChild(commentElement);
     }
 }
