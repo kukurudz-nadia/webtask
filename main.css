@@ -120,3 +120,21 @@
     font-weight: 300;
     font-size: 20px;
   }
+
+  .comment {
+    border: 3px solid  #B22222;
+    border-radius: 30px;
+    font-size: 16px;
+    background-color: #FAEBD7;
+    margin: 80px 200px 40px 200px;
+    padding: 30px;
+  }
+
+  .textarea{
+    font-size: 20px;
+    padding: 60px;
+  }
+
+  .submit{
+    font-size: 25px;
+  }
