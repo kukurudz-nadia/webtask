@@ -1,23 +1,33 @@
+var previewImage = function (event) {
+  var output = document.getElementById('output');
+  output.src = URL.createObjectURL(event.target.files[0]);
+  output.onload = function () {
+    URL.revokeObjectURL(output.src)
+  }
+};
+
 function displayData() {
   let input1 = document.getElementById("input1").value;
   let input2 = document.getElementById("input2").value;
-  let input3 = document.getElementById("input3").files[0];
 
-  let outputDiv = document.getElementById("output");
-  outputDiv.innerHTML = "";
-  let outputP = document.createElement("p");
-
-  outputP.textContent = input1 + input2;
-  if (input3) {
-    let outputImg = document.createElement("img");
-    outputImg.src = URL.createObjectURL(input3);
-    outputImg.alt = "Image from input";
-    outputDiv.appendChild(outputImg);
+  if (input1.trim().length < 1 || input2.trim().length < 1) {
+    showAlert('Please fill the inputs')
   }
+  else {
+    showAlertAndClearInputs(input1.trim(), input2.trim())
+  }
+}
 
-  outputDiv.appendChild(outputP);
+function showAlert(text) {
+  alert(text);
+}
+
+function showAlertAndClearInputs(title, text) {
+  showAlert('Article with title ' + title + ' and text ' + text + ' has been added.')
 
   document.getElementById("input1").value = "";
   document.getElementById("input2").value = "";
-  document.getElementById("input3").value = "";
+
+  var output = document.getElementById('output');
+  output.src = 'default.png';
 }
