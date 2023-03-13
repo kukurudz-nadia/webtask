@@ -13,6 +13,7 @@ function addComment() {
         commentId++;
         commentInput.value = "";
         displayComments();
+        showAlert('Comment with text ' + comment + ' has been added.')
     }
 }
 
@@ -26,4 +27,8 @@ function displayComments() {
         commentElement.innerHTML = `<br><p>${comment.comment}</p>${comment.name},   <small>${comment.date}</small>`;
         commentList.appendChild(commentElement);
     }
+}
+
+function showAlert(text) {
+  alert(text);
 }
