@@ -56,13 +56,15 @@
   <main>
     <div class="comment">
       <h1>Add news</h1>
-      <input type="file" accept="image/*" onchange="previewImage(event)">
-      <img src = "default.png" id="output"/>
-
-      <input type="text" id="input1" placeholder="News title">
-      <input type="text" id="input2" placeholder="News text">
-
-      <button onclick="displayData()">Add</button>
+      <div class="input">
+        <input type="file" accept="image/*" onchange="previewImage(event)">
+        <img src="default.png" id="output" />
+      </div>
+      <div class="input">
+        <input type="text" id="input1" placeholder="News title">
+        <input type="text" id="input2" placeholder="News text">
+        <button onclick="displayData()" class="btn btn-danger">Add</button>
+      </div>
     </div>
   </main>
   <footer>
