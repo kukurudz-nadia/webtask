@@ -11,7 +11,7 @@ function displayData() {
   let input2 = document.getElementById("input2").value;
 
   if (input1.trim().length < 1 || input2.trim().length < 1) {
-    showAlert('Please fill the inputs')
+    showAlert('Please fill the inputs correctly')
   }
   else {
     showAlertAndClearInputs(input1.trim(), input2.trim())
