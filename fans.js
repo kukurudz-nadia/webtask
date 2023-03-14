@@ -15,6 +15,9 @@ function addComment() {
         displayComments();
         showAlert('Comment with text ' + comment + ' has been added.')
     }
+    else {
+        alert("Please fill the inputs correctly");
+    }
 }
 
 function displayComments() {
