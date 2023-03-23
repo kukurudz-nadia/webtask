@@ -14,15 +14,25 @@ function addComment() {
         commentInput.value = "";
         displayComments();
         showAlert('Comment with text ' + comment + ' has been added.')
+
+        // зберігаємо коментар у LocalStorage
+        localStorage.setItem('comments', JSON.stringify(comments));
     }
     else {
         alert("Please fill the inputs correctly");
     }
+
 }
 
 function displayComments() {
     const commentList = document.getElementById("commentsList");
     commentList.innerHTML = "";
+
+    if (localStorage.getItem('comments')) {
+        // якщо є, то витягуємо їх із LocalStorage
+        comments = JSON.parse(localStorage.getItem('comments'));
+        localStorage = [];
+    }
 
     for (let i = 0; i < comments.length; i++) {
         const comment = comments[i];
